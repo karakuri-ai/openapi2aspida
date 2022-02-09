@@ -1,5 +1,5 @@
 {
-  "name": "openapi2aspida",
+  "name": "@karakuri-ai/openapi2aspida",
   "version": "0.17.0",
   "description": "Convert OpenAPI 3.0 or Swagger 2.0 definitions into aspida",
   "author": "Solufa <solufa2020@gmail.com>",
@@ -19,16 +19,21 @@
     "test": "jest",
     "typecheck": "tsc --noEmit"
   },
-  "homepage": "https://github.com/aspida/openapi2aspida#readme",
+  "homepage": "https://github.com/karakuri-ai/openapi2aspida#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aspida/openapi2aspida.git"
+    "url": "git+https://github.com/karakuri-ai/openapi2aspida.git"
   },
   "bugs": {
-    "url": "https://github.com/aspida/openapi2aspida/issues"
+    "url": "https://github.com/karakuri-ai/openapi2aspida/issues"
+  },
+  "publishConfig": {
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com/"
   },
   "files": [
-    "dist"
+    "dist",
+    "bin"
   ],
   "keywords": [
     "typescript",
