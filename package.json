@@ -1,6 +1,6 @@
 {
   "name": "@karakuri-ai/openapi2aspida",
-  "version": "0.17.0",
+  "version": "0.17.1-custom.0",
   "description": "Convert OpenAPI 3.0 or Swagger 2.0 definitions into aspida",
   "author": "Solufa <solufa2020@gmail.com>",
   "license": "MIT",
