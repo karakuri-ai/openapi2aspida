@@ -29,9 +29,10 @@ describe('cli test', () => {
         })[0]
 
         for (const filePath of readDirRecursive(config.input)) {
-          expect(fs.readFileSync(`_${filePath}`, 'utf8')).toBe(
-            fs.readFileSync(filePath, 'utf8').replace(/\r/g, '')
-          )
+          const actual = fs.readFileSync(`_${filePath}`, 'utf8')
+          const expected = fs.readFileSync(filePath, 'utf8').replace(/\r/g, '')
+          actual === expected || console.log('expected', filePath)
+          expect(actual).toBe(expected)
         }
       })
     )
